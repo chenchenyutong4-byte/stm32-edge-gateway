@@ -1,0 +1,52 @@
+﻿/**
+ * @file lv_port_disp_templ.h
+ *
+ */
+
+#if 1
+
+#ifndef LV_PORT_DISP_TEMPL_H
+#define LV_PORT_DISP_TEMPL_H
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/*********************
+ *      INCLUDES
+ *********************/
+#if defined(LV_LVGL_H_INCLUDE_SIMPLE)
+#include "lvgl.h"
+#else
+#include "lvgl.h"
+#endif
+
+/*********************
+ *      DEFINES
+ *********************/
+
+/**********************
+ *      TYPEDEFS
+ **********************/
+
+/**********************
+ * GLOBAL PROTOTYPES
+ **********************/
+
+void lv_port_disp_init(void);
+
+void disp_enable_update(void);
+
+void disp_disable_update(void);
+
+/**********************
+ *      MACROS
+ **********************/
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif
+
+#endif
